@@ -1,6 +1,6 @@
 #include <iostream>
 #include "helper.h"
-
+#include "loadmodels_incuda.h"
 
 int main() {
     cublasHandle_t cublasHandle;
@@ -9,5 +9,6 @@ int main() {
 //    cublasStatus = cublasSetPointerMode(cublasHandle, CUBLAS_POINTER_MODE_DEVICE);
     checkCublasErrors(cublasStatus);
     std::cout << "Hello, World!" << std::endl;
+    runModel();
     return 0;
 }
