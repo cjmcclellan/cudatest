@@ -9,6 +9,6 @@ int main() {
 //    cublasStatus = cublasSetPointerMode(cublasHandle, CUBLAS_POINTER_MODE_DEVICE);
     checkCublasErrors(cublasStatus);
     std::cout << "Hello, World!" << std::endl;
-    runModel();
+//    runModel();
     return 0;
 }
